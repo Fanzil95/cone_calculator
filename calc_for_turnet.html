@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Cone Calculator</title>
+  <style>
+   input::placeholder {
+  color: grey;
+  font-size: 1em;
+}
+  .style{
+    padding:10px;
+    margin:10px;
+    background: #f000;
+    font-size: 2em;
+  }
+  body{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: transform 0.5s ease-in-out;
+  }
+  </style>
+</head>
+<body>
+  <div class="container1">
+    <h1>Расчёт конических поверхностей</h1>
+    <hr/>
+    <h2>Что нужно найти?</h2>
+    <ul>
+      
+      <li><button class="style"id="D">Наибольший диаметр (D)</button></li>
+      <li><button class="style" id="d">Наименьший диаметр (d)</button></li>
+      <li><button class="style" id="L">Длина конуса (L)</button></li>
+      <li><button class="style" id="tg">Угол tg(ɑ)</button></li>
+    </ul>
+    <h3 style="font-size:2.5em"></h3>
+  </div>
+  <div class="container2">
+    <form >
+      <div id="dv">
+       
+        <h2 style="font-size: 4em" id="uv"></h2>
+        <h5 id="help" ></h5>
+      </div> 
+    </form>
+  </div>
+  
+  <script src="/js/c_f_t.js"></script>
+</body>
+</html>
