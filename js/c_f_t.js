@@ -25,21 +25,21 @@ function findTg (D,d,l) {
 
 //найти наибольший диаметр
 function findTheLargestDiameter (d,l,tg) {
-  const tgR = changeMinInInteger(tg) * (Math.PI/180)
+  const tgR = Math.tan(changeMinInInteger(tg) * (Math.PI/180))
   const lrgstD = tgR*(2*l)+d
   return lrgstD.toFixed(2)
 }
 
   //найти наименьший диаметр
 function findTheSmallestDiameter (D,l,tg){
-  const tgR = changeMinInInteger(tg) * (Math.PI/180)
+  const tgR = Math.tan(changeMinInInteger(tg) * (Math.PI/180))
   const smllstD = D - tgR*(2*l)
   return smllstD.toFixed(2)
 } 
 
   //найти длину конуса
 function findTheLengthOfTheCone (D,d,tg) {
-  const tgR = changeMinInInteger(tg) * (Math.PI/180)
+  const tgR = Math.tan(changeMinInInteger(tg) * (Math.PI/180))
   const lngthOfTheCone = (D-d)/(2*tgR)
   return lngthOfTheCone.toFixed(2)
 }
